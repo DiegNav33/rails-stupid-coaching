@@ -13,3 +13,88 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  margin: 0;
+}
+
+.container {
+width: 80%;
+margin: 0 auto;
+/* text-align: center; */
+}
+
+form {
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+
+  label {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"] {
+    border-radius: .3rem 0 0 .3rem;
+    border: 1px solid rgb(1, 136, 181);
+    border-right: none;
+    padding: .5rem;
+    margin-right: -4px;
+    outline: none;
+
+
+    &::placeholder {
+      color: rgb(1, 136, 181);
+    }
+  }
+
+  input[type="submit"] {
+    border-radius: 0 .3rem .3rem 0;
+    border: 1px solid rgb(1, 136, 181);
+    padding: .5rem;
+    background-color: rgb(1, 136, 181);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid rgb(1, 136, 181);
+      color: rgb(1, 136, 181);
+    }
+  }
+}
+
+#student, #coach {
+  border-left: 6px solid rgb(186, 185, 185);
+  padding: 1rem;
+  margin: 2rem 0;
+
+  p {
+    margin: 0;
+  }
+
+  p:nth-child(1) {
+    margin-bottom: 1rem;
+  }
+
+  p:last-child {
+    margin-top: 1rem;
+  }
+}
+
+#coach {
+  background-color: rgb(249, 249, 202);
+
+  p:nth-child(1) {
+    font-weight: bold;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgb(1, 136, 181);
+  font-weight: 800;
+}
